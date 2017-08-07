@@ -1,0 +1,38 @@
+/*头部*/
+.header{width:100%;height:67px;background:rgb(27,27,27);}
+.nav{width:1127px;margin:0 auto;height:100%;position:relative;}
+.nav .logo{width:150px;height:33px;margin-top:17px;}
+.nav_rig{float:right;height: 100%;width:72%;}
+.nav_rig p{margin:0 12px 0 10px;float:right;line-height:67px}
+.nav_rig a{color:#a8a8a8;padding:3.5px 10px}
+.nav_rig a:hover{color:white;border:1px solid #7b7b7b;border-radius:8px}
+
+.list{width: 60%;position:absolute;height:100%;top:0;right:0;display:none;}
+.list img{width:22.4px;position:absolute;top:24px;left:90%;}
+.list_v{position:absolute;right:0;top:44px;display:none;z-index:6}
+.list_v2{display:block}
+.list_v a{color:white;background:rgb(27,27,27);font-style:18px;font-weight:bold;padding-left: 10px;
+	height: 30px;line-height:30px;display:block;border-bottom:1px solid #7b7b7b;width:110px}
+
+/*底部*/
+.footer{width:100%;margin-top:45px}
+.footer >div{width:100%;font-size:10px;color: #808080;text-align:center}
+.footer >div:nth-of-type(1) p{width:25px;margin:0 auto 14px;position:relative;height:19px;}
+.footer >div >p img{width:100%;position:absolute;top:0;left: 0}
+.mail_h{position: absolute;top:0;left: 0;width: 25px;display:none}
+.footer >div:nth-of-type(1) p:hover .mail_h{display: block}
+.other{width:150px;margin:0 auto;overflow: hidden;}
+.other p{float:left;width:25px;height:25px;overflow: hidden;position:relative;margin:0 4px;}
+.other p:nth-of-type(1) img{position:absolute;top:0;left:0;}
+.other p:nth-of-type(2) img{position:absolute;top:0;left:0;}
+.other p:nth-of-type(3) img{position:absolute;top:0;left:0;}
+.other p:nth-of-type(4) img{position:absolute;top:0;left:0;}
+.face,.tube,.in,.twit{display:none}
+.other p:nth-of-type(1):hover .face{display:block}
+.other p:nth-of-type(2):hover .tube{display:block}
+.other p:nth-of-type(3):hover .in{display:block}
+.other p:nth-of-type(4):hover .twit{display:block}
+.footer >div:nth-of-type(3){padding:25px 0;}
+
+
+

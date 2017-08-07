@@ -1,0 +1,32 @@
+.nav_rig p:nth-of-type(2) a{border:1px solid #7b7b7b;color:white;border-radius:8px}
+.header{position: fixed;top:0;left:0;z-index:5}
+
+.cont{background:rgb(229, 229, 229);position:relative;}
+.cont ul{height:655px;width:100%;}
+.cont ul li{width:980px;margin:0 auto;position:relative;height:100%}
+.cont li p:nth-of-type(1){font-size:23px;color:#616161;padding-top:19%;}
+.cont li span:nth-of-type(1){display:inline-block;padding:0 6.5px;border:1px solid #616161;
+	border-radius:6px;height:25px;line-height:26px;margin-right:11px;}
+.cont li p:nth-of-type(2){width:42%;line-height:23px;padding-top:15px;padding-bottom:15px;
+	word-break:break-all;}
+.cont li div{overflow:hidden;width:100%;position:relative;z-index: 2}
+.scroll_1 div img{width:18%;float:left;}
+.cont ul:nth-of-type(2n){background:white;}
+.scroll_2 li >img{position:absolute;width:350px;top:0;right:-15px}
+.scroll_1 li >img{position:absolute;width:350px;bottom:0;right:-60px}
+.scroll_2 div img{width:32%;margin-right:6px}
+.scroll_3 li >img{position:absolute;width:400px;bottom:0;left:-110px;}
+.cont .scroll_3 li{padding-left:280px;width:700px;}
+.scroll_3 div img{width:45%;margin-right:6px}
+.cont .scroll_4 li{width:880px;padding-left:100px;z-index:2}
+.scroll_4 li >img{position:absolute;}
+.scroll_4 li >img{width:400px}
+.scroll_4 li >img:nth-of-type(1){top:0;left:-60px;z-index:-1}
+.scroll_4 li >img:nth-of-type(2){bottom:0;right:-90px}
+.scroll_4 div img{width:33%;display:block;padding:6px 0}
+.scroll_5 li{width:980px}
+.scroll_5 li >img{position:absolute;width:400px;top:0;right:-34px;}
+
+
+
+

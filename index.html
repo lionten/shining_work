@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head_footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <style>
+		@media screen and (max-width:1140px) and (min-width:851px){
+			.nav{width:100%;}
+		}
+		@media screen and (max-width:850px) and (min-width:640px){
+			.nav{width:100%;}
+			.nav_rig{display: none}
+			.list{display:block;}
+		}
+		@media screen and (max-width: 640px) and (min-width: 400px){
+			.nav{width:100%;}
+			.header{height:51px}
+			.nav_rig{display: none}
+			.nav .logo{margin:9px 0 0 26px}
+			.list{display:block;}
+			.list img{width:28.8px;position:absolute;top:12px;left:79%;}
+			.cont{width:92.8%;}
+			.cont ul{height: auto;}
+			.cont ul li:nth-of-type(1){width:100%;padding:0}
+			.cont ul li:nth-of-type(2){width:100%;padding:0}
+			.cont ul li:nth-of-type(3){width:100%;padding:0}
+			.cont ul li:nth-of-type(3) h3{text-align:center;font-size:21px;padding-top:17px;}
+			.cont ul li:nth-of-type(3) p{text-align: left;font-size:13px;padding:25px 0;
+				line-height:20px}
+		}
+
+
+    </style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="nav">
+			<img src="img/shininglogo.png" class="logo">
+			<div class="nav_rig">
+				<p><a href="contact.html">Contact</a></p>
+				<p><a href="bim.html">Bim</a></p>
+				<p><a href="3D_animation.html">3D Animation</a></p>
+				<p><a href="rendering.html">Rendering</a></p>
+				<p><a href="about.html">About</a></p>
+				<p><a href="index.html">Home</a></p>
+			</div>
+			<div class="list">
+				<a href="###"><img src="img/list.png"></a>
+				<div class="list_v">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="rendering.html">Rendering</a>
+					<a href="3D_animation.html">3D Animation</a>
+					<a href="bim.html">Bim</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 中间：内容 -->
+	<div class="cont">
+		<ul class="cont_one">
+			<li>
+				<a href="###"><img src="img/home_pic_one.png" presrc="img/home_pic_one_h.png"></a>
+			</li>
+			<li class="rec"></li>
+			<li>
+				<a href="">
+					<h3>RENDERINGS</h3>
+					<p>Masterplan、Public Building、commercial Building、Residential Building、Landscape Design</p>
+				</a>
+				
+			</li>
+		</ul>
+		<ul class="cont_two">
+			<li><a href="###"><img src="img/home_pic_two.jpg" presrc="img/home_pic_two_h.png"></a></li>
+			<li class="rec"></li>
+			<li>
+				<a href="###">
+					<h3>BIM</h3>
+					<p>Model Completion、Clash Detection、MEP Integration、Curtain Wall Remedying、BIM Consulting</p>
+				</a>
+				
+			</li>
+		</ul>
+		<ul class="cont_three">
+			<li><a href="###"><img src="img/homes_pic_three.jpg" presrc="img/homes_pic_three_h.jpg"></li></a>
+			<li class="rec"></li>
+			<li>
+				<a href="###">
+					<h3>3D ANIMATION</h3>
+					<p>Real estate advertising animation Design scheme Animation Corporate promotional Animation</p>
+				</a>
+				
+			</li>
+		</ul>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div>
+			<p>
+				<img src="img/mail.jpg">
+				<a href="#" class="mail_h"><img src="img/mail_h.jpg"></a>
+			</p>
+		</div>
+		<div>
+			<div class="other">
+				<p>
+					<img src="img/facebook.jpg">
+					<a href="###"><img src="img/facebook_h.jpg" class="face"></a>
+				</p>
+				<p>
+					<img src="img/youtube.jpg">
+					<a href=""><img src="img/youtube_h.jpg" class="tube"></a>
+				</p>
+				<p>
+					<img src="img/linkedln.jpg">
+					<a href=""><img src="img/linkedln_h.jpg" class="in"></a>
+				</p>
+				<p>
+					<img src="img/twitter.jpg">
+					<a href=""><img src="img/twitter_h.jpg" class="twit"></a>
+				</p>
+			</div>
+		</div>
+		<div>Copyright © 1998-2015 shining Group</div>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/head_footer.js"></script>
+	<script>
+		var cont = $(".cont").children();
+		for(var i=0;i<cont.length;i++){
+			cont.eq(i).mouseover(function(){
+				//获取img的属性值：src和presrc
+				var presrc = $(this).find("img").attr("presrc")
+				var src = $(this).find("img").attr("src")
+				//当鼠标移入时，将两个属性值进行互换，src和presrc的图片链接进行互换
+				$(this).find("img").attr("src",presrc);
+				$(this).find("img").attr("presrc",src);
+				$(this).find(".rec").css("background","#CFDB00")
+			});
+			cont.eq(i).mouseout(function(){
+				//获取img的属性值：src和presrc，此时img的属性值不再是原来的，而是互换过后的
+				var presrc = $(this).find("img").attr("presrc")
+				var src = $(this).find("img").attr("src");
+				//当鼠标移除时，获得原来的属性值，src和presrc的属性值是一开始没互换时的
+				$(this).find("img").attr("src",presrc);
+				$(this).find("img").attr("presrc",src);
+				$(this).find(".rec").css("background","rgb(176,176,176)")
+			})
+		}
+
+
+
+	</script>
+</body>
+</html>

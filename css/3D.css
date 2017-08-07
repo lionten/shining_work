@@ -1,0 +1,18 @@
+.nav_rig p:nth-of-type(3) a{border:1px solid #7b7b7b;color:white;border-radius:8px}
+
+.cont{width: 100%;border-top:2px solid rgb(153,153,153);padding-bottom:70px}
+.vid{width:100%;background:#1b1b1b;margin-bottom:16px;position:relative;}
+.vid a{width:1127px;position:relative;display:block;margin:0 auto;}
+.vid p{background:rgba(0,0,0,0.6);text-align: center;color:#b4b4b4;font-size:23px;position:absolute;
+	bottom:0;left: 0;width:100%;height:59px;line-height:59px}
+.vid img:nth-of-type(1){width:100%;}
+.vid img:nth-of-type(2){width:45px;position:absolute;top:50%;left:50%;margin:-22px 0 0 -22px;}
+.des_vid{width: 1127px;margin:0 auto;overflow: hidden;}
+.des_vid div{float:left;width:31%;padding:0 1.16%;}
+.des_vid a{width: 100%;position:relative;display: block}
+.des_vid p{text-align: center;color:#909090;font-size:15px;padding: 23px 0}
+.des_vid a img:nth-of-type(1){width: 100%}
+.des_vid a img:nth-of-type(2),.but{width:24.4px;position:absolute;left:50%;top:50%;margin:-12.2px 0 0 -12.2px;}
+.but{display:none}
+.des_vid a:hover .but{display: block}
+
